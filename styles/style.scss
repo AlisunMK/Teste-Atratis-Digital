@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+$dflex:flex;
+$top50:50px;
+$weight: 700;
+$noborder:none;
+$total:100%;
+$color-1: #4a545b;
+$color-2: #fff;
+$color-3:#cc416b;
+$color-4:#3a3b3d;
+$color-5:#000;
+$color-2-light: rgba(255, 255, 255, 0.658);
+$color-1-light: #49535aa4;
+$bg-transparent: transparent;
+$padding12:12px;
+$border-radius30: 30px;
+$center: center;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: $dflex;
+    justify-content: $center;
+    width: $total;
+    height: $total;
+    flex-direction: column;
+}
+.header{
+    width: $total;
+    height: 100px;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+}
+.main{
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    width: 50%;
+    height: 100%;
+}
+.main img{
+    width: 55%;
+}
+.nav.justify-content-end{
+    display: none;
+}
+.btn.btn-primary.btn-sm{
+    display: none;
+}
+.banner{
+    background-image: url("../img/Hublife Conhecimento e Modernidade.png");
+    background-size: cover;
+    min-width: $total;
+    min-height: 650px;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+}
+.banner-background{
+    height: 650px;
+    min-width: $total;
+    background-color: #4a545bef;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+}
+.carousel{
+    height: 650px;
+    width: $total;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: row;
+}
+.carousel-item.active{
+    height: 650px;
+    width: $total;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: row;
+}
+.carousel-item{
+    height: 650px;
+    width: $total;
+    flex-direction: row;
+}
+.left{
+    width: 90%;
+    height: $total;
+    display: $dflex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: flex-start;
+}
+.left h1{
+    color: $color-2;
+}
+.left p{
+    font-size: 14px;
+    color:$color-2-light;
+}
+.right{
+    display: none;
+}
+.btn.btn-primary.btn-sm2{
+    border: $noborder;
+    background-color: $color-3;
+    padding: $padding12;
+    width: 150px;
+    border-radius: $border-radius30;
+}
+.outherCarousel{
+    width: 90%;
+    height: $total;
+    display: $dflex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: $center;
+}
+.outherCarousel h1{
+    color: $color-2;
+}
+.carousel-indicators button.active{
+    transition: all 0.7s;
+   background-color: $color-3;
+   width: 50px;
+}
+.content-carousel{
+    height: 650px;
+    width: $total;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: row;
+}
+.services{
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    width: $total;
+    flex-direction: column;
+}
+.services h1{
+    color: $color-1;
+   margin-top: 80px;
+   font-size: 1.9rem;
+}
+.services p{
+   color: $color-1-light;
+   margin-top: -10px;
+}
+.grid-services{
+    margin-top: $top50;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+    width: $total;
+}
+.item-block{
+    width: 200px;
+    display: $dflex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: $center;
+    padding: 50px 0px 0px 0px;
+}
+.item-block img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.item-content{
+    margin-top: $top50;
+    width: 200px;
+    flex-direction: column;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+}
+.item-content h3{
+    font-size: 18px;
+    color: $color-3;
+}
+.item-content p{
+    color: $color-1-light;
+    margin-top: 10px;
+    text-align: $center;
+    width: 99%;
+    font-size: 12px;
+}
+.btn.btn-primary.btn-sm3{
+    border: $noborder;
+    border-bottom: 1px solid $color-3;
+    background: $bg-transparent;
+    color: $color-1;
+    border-radius: 0px;
+    width: 120px;
+}
+.about{
+    width: $total;
+    display:$dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.diferenciais{
+    margin-top: 50px;
+    width: 100%;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.left-2{
+    display: $dflex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: flex-start;
+    width: 90%;
+    height: 500px;
+}
+.left-2 h1{
+    font-size: 32px;
+    color: $color-1;
+}
+.left-2 p{
+    font-size: 16px;
+    color: $color-1-light;
+}
+.left-2 span{
+    padding-top: $padding12;
+    font-size:16px;
+    color: $color-1;
+}
+.right-2{
+    width: 90%;
+    height: 300px;
+}
+.right-2 img{
+    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64); 
+    box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
+    border-radius: 4px;
+    width: $total;
+    height: $total;
+}
+.excelências{
+    margin-top: 10px;
+    width: 100%;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.right-3{
+    display: $dflex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: flex-start;
+    width: 90%;
+    height: 500px;
+}
+.right-3 h1{
+    font-size: 32px;
+    color: $color-1;
+}
+.right-3 p{
+    font-size: 16px;
+    color: $color-1-light;
+}
+.left-3{
+    width: 90%;
+    height: 300px;
+}
+.left-3 img{
+    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64); 
+    box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
+    border-radius: 4px;
+    width: $total;
+    height: $total;
+}
+.btn.btn-primary.btn-sm4{
+    border: $noborder;
+    background-color: $color-3;
+    padding: $padding12;
+    width: 200px;
+    border-radius: $border-radius30;
+}
+.video-area{
+    background-image: url("../img/Hublife Conhecimento e Modernidade.png");
+    background-size: cover;
+    width: $total;
+    height: 750px;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+}
+.video-background{
+    position: relative;
+    height: 750px;
+    width: $total;
+    background-color: #3a3b3df3;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.video-area h1{
+    padding-top: $top50;
+    color: $color-2;
+}
+.video-area p{ 
+    color: $color-2-light;
+}
+#ImagemVideo{
+    margin-top: $top50;
+    border-radius:10px;
+    z-index: 10;
+    filter: drop-shadow(0px 8px 12px #000);
+    width:90%;
+    height:300px;
+}
+#playIcon{
+    cursor: pointer;
+    width: 180px;
+    z-index: 11;
+    height: 180px;
+    position: absolute;
+    top:50%
+}
+#logo{
+    width: 400px;
+    height: 200px;
+    bottom:5%;
+    right:14%;
+    position: absolute;
+}
+.blog{
+    display: $dflex;
+     justify-content: $center;
+     align-items: $center;
+     flex-direction: column;
+}
+.blog h1{
+    margin-top: 50px;
+    color:$color-4;
+    font-size: 30px;
+}
+.grid-blog{
+    margin-top: $top50;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+    width: $total;
+}
+.item-blog{
+    width: 350px;
+    height: 450px;
+}
+.item-blog img{
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+}
+.item-blog h3{
+    font-size: 18px;
+    color: $color-3;
+}
+.item-blog p{
+    width: 90%;
+    color: $color-1-light;
+}
+.btn.btn-primary.btn-sm-5{
+    color:$color-1;
+    border: $noborder;
+    border-radius: 0px;
+    border-bottom: 1px solid $color-1;
+    background:$bg-transparent;
+    padding: $padding12;
+    width: 300px;
+}
+.btn.btn-primary.btn-sm-6{
+    margin-top: 20px;
+    border: $noborder;
+    background-color: $color-3;
+    padding: $padding12;
+    width: 200px;
+    border-radius: $border-radius30;
+}
+#maps{
+    margin-top: 50px;
+    width: $total;
+}
+footer{
+    width: $total;
+    height: 250px;
+    background-color: $color-1;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.area-text-footer{
+    width: 90%;
+    height: 70px;
+    display: $dflex;
+    justify-content: $center;
+    align-items: $center;
+    flex-direction: column;
+}
+.area-text-footer h3{
+    padding-top: 10px;
+    color: $color-2-light;
+    font-size: 14px;
+}
+.area-social{
+    margin-top: 10px;
+    display: $dflex;
+    flex-direction: row;
+    justify-content: $center;
+    align-items: $center;
+}
+.area-social img{
+    padding-left: 25px;
+}
+.area-business{
+    margin-top: 50px;
+    width: 90%;
+    height: 50px;
+    border: $noborder;
+    border-top: 0.1px solid $color-2-light;
+    display: $dflex;
+    justify-content: space-between;
+    align-items: $center;
+    flex-direction: row;
+}
+.area-business img{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    padding-top: 20px;
+}
+#caracol{
+    width: 30px;
+    height: 40px;
+    padding-top: 20px;
+}
+@media(min-width:930px){
+    .header{
+        background-color: $color-2;
+        min-height: 100px;
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+    }
+    .main{
+        width: 50%;
+        height: 100px;
+        display: $dflex;
+        align-items: $center;
+        justify-content: space-between;
+    }
+    .main img{
+        width: 22%;
+    }
+    .nav.justify-content-end{
+        display: flex;
+    }
+    .nav-link{
+        padding: 10px;
+        color:$color-1;
+    }
+    .nav-link:hover{
+        color:$color-3;
+    }
+    .nav li:last-child{
+        padding-right: 20px;
+    }
+    .btn.btn-primary.btn-sm{
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+        border: $noborder;
+        background-color: $color-3;
+        border-radius: $border-radius30;
+        padding: $padding12;
+        width: 220px;
+    }
+    .banner{
+        background-image: url("../img/Hublife Conhecimento e Modernidade.png");
+        background-size: cover;
+        min-width: $total;
+        min-height: 650px;
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+    }
+    .carousel{
+        height: 650px;
+        width: 50%;
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+        flex-direction: row;
+    }
+    .carousel-item.active{
+        height: 650px;
+        width: 80%;
+        flex-direction: row;
+    }
+    .content-carousel{
+        height: 650px;
+        min-width: 40%;
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+        flex-direction: row;
+    }
+    .left{
+        width: 50%;
+        height: $total;
+        display: $dflex;
+        flex-direction: column;
+        justify-content: $center;
+        align-items: flex-start;
+    }
+    .left h1{
+        color: $color-2;
+    }
+    .left p{
+        font-size: 14px;
+        color:$color-2-light;
+    }
+    .btn.btn-primary.btn-sm2{
+        border: $noborder;
+        background-color: $color-3;
+        padding: $padding12;
+        width: 150px;
+        border-radius: $border-radius30;
+    }
+    .right{
+        width: 50%;
+        height: $total;
+        display: $dflex;
+        flex-direction: column;
+        justify-content: $center;
+        align-items: flex-end;
+    }
+    #woman{
+        width: 50%;
+        margin-top: 4%;
+        position: absolute;
+    }
+    #symbol{
+        width: 30%;
+     }
+    .grid-services{
+        flex-direction: row;
+        width: 800px;
+    }
+    .item-block{
+        padding: 0px 150px 0px 200px;
+    }
+    .diferenciais{
+        margin-top: 200px;
+        width: 70%;
+        flex-direction: row;
+    }
+    .left-2{
+        display: $dflex;
+        flex-direction: column;
+        justify-content: $center;
+        align-items: flex-start;
+        width: 40%;
+        height: 500px;
+    }
+    .right-2{
+        padding-left: 50px;
+        width: 480px;
+        height: 300px;
+    }
+    .excelências{
+        margin-top: 10px;
+        width: 70%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .right-3{
+        display: $dflex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 40%;
+        padding-left: 50px;
+        height: 500px;
+    }
+    .left-3{
+        width: 480px;
+        height: 300px;
+    }
+    #ImagemVideo{
+        width:750px;
+        height:500px;
+    }
+    #playIcon{
+        cursor: pointer;
+        width: 180px;
+        z-index: 11;
+        height: 180px;
+        position: absolute;
+        top:48%
+    }
+    .grid-blog{
+        height: 500px;
+        margin-top: $top50;
+        display: $dflex;
+        justify-content: $center;
+        align-items: $center;
+        flex-direction: row;
+        width: 800px;
+    }
+    .item-blog{
+        width: 350px;
+        padding-left: 40px;
+        height: 450px;
+    }
+    footer{
+        height: 400px;
+        justify-content: $center;
+        align-items: $center;
+        flex-direction: column;
+    }
+    .area-text-footer{
+        width: 800px;
+        height: 50px;
+        display: $dflex;
+        justify-content: space-between;
+        align-items: $center;
+        padding: 5px;
+        flex-direction: row;
+    }
+    .area-social{
+        margin-top: 10px;
+        width: 5%;
+        flex-direction: row;
+    }
+    .area-social img{
+        padding-left: 15px;
+    }
+    .area-business{
+        width: 800px;
+        height: 50px;
+        flex-direction: row;
+    }
+}
