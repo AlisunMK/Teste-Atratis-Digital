@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-$dflex:flex;
-$top50:50px;
+$dflex: flex;
+$top50: 50px;
 $weight: 700;
-$noborder:none;
+$noborder: none;
 $total:100%;
 $color-1: #4a545b;
 $color-2: #fff;
@@ -79,6 +79,9 @@ body{
     align-items: $center;
     flex-direction: row;
 }
+#carouselExampleIndicators {
+  width: 65vw;
+}
 .carousel-item.active{
     height: 650px;
     width: $total;
@@ -91,6 +94,11 @@ body{
     height: 650px;
     width: $total;
     flex-direction: row;
+}
+.symbol {
+  position: absolute;
+  right: 40px;
+  bottom: 210px;
 }
 .left{
     width: 90%;
@@ -246,7 +254,7 @@ body{
     height: 300px;
 }
 .right-2 img{
-    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64); 
+    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
     box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
     border-radius: 4px;
     width: $total;
@@ -281,7 +289,7 @@ body{
     height: 300px;
 }
 .left-3 img{
-    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64); 
+    -webkit-box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
     box-shadow: 9px 8px 0px 1px rgba(217,217,217,0.64);
     border-radius: 4px;
     width: $total;
@@ -317,7 +325,7 @@ body{
     padding-top: $top50;
     color: $color-2;
 }
-.video-area p{ 
+.video-area p{
     color: $color-2-light;
 }
 #ImagemVideo{
@@ -550,19 +558,17 @@ footer{
     .right{
         width: 50%;
         height: $total;
-        display: $dflex;
+        display: flex;
         flex-direction: column;
         justify-content: $center;
         align-items: flex-end;
+        .woman {
+          position: relative;
+          left: 200px;
+          top: 150px;
+          padding: 32px;
+        }
     }
-    #woman{
-        width: 50%;
-        margin-top: 4%;
-        position: absolute;
-    }
-    #symbol{
-        width: 30%;
-     }
     .grid-services{
         flex-direction: row;
         width: 800px;
